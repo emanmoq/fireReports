@@ -1569,6 +1569,21 @@ footer {
     .overviewVideoContainer{
         height: auto;
     }
+    .scrollNav {
+        top: 0 !important;
+        z-index: 555;
+        animation-duration: .5s;
+        background: #272B4B;
+        position: fixed !important;
+        box-shadow: rgba(0, 0, 0, 0.1) 2px 3px 20px 3px;
+        transition: 1s all;
+        left: 0;
+        width:100%;
+        right:0;
+        padding:10px 0;
+        transition: all .5s;;
+        animation:sticky;
+    }
 }
 @media(min-width:800px ) and (max-width:1020px) {
     .navbar-expand-lg .navbar-collapse {
