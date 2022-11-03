@@ -562,7 +562,6 @@ header .reqBtn {
 
 .locationLabel span {
     align-self: center;
-    margin-top: 17px;
     font-size: 1em;
     font-family: "Tajawal-Medium";
     margin: 0;
@@ -682,6 +681,7 @@ header .reqBtn {
     box-shadow: 0 50px 50px rgba(0, 0, 0, .05);
     border: 1px solid #313236;
     background-color: transparent;
+    color:white
 }
 
 .contactForm .form-group {
@@ -923,7 +923,7 @@ footer {
     position: absolute;
     top: 124px;
     width: 850px;
-    left: -36%;
+    left: -42%;
 }
 
 .ourTeam .sectionTitle span {
@@ -995,13 +995,13 @@ footer {
 }
 
 .aboutHero {
-    padding-top: 112px;
+    padding-top: 212px;
     padding-bottom: 30px;
 }
 
 .aboutHero h1 {
     font-size: 2.375em;
-    max-width: 70%;
+    max-width: 60%;
 }
 
 .aboutHero h6 {
@@ -1020,10 +1020,15 @@ footer {
 
 .ourTeambg2 {
     position: absolute;
-    right: -30%;
-    top: 50%
+    right: -28%;
+    top: 24%;
 }
-
+.navbar-brand{
+    margin-right: 0;
+}
+.navbar {
+    padding:20px 0
+}
 /*********************************/
 .OurProductHero {
     position: relative;
@@ -1044,7 +1049,9 @@ footer {
     padding-top: 160px;
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 68%);
 }
-
+.productHeroText{
+    padding-top:130px
+}
 .productHeroText h4 {
     font-weight: 500;
     margin-bottom: 20px;
@@ -1061,8 +1068,8 @@ footer {
 .productHeroImg {
     position: absolute;
     left: 0;
-    top: 160px;
-    width: 560px;
+    top: 0;
+    width: 550px;
     height: 400px;
     z-index: 2;
 }
@@ -1074,7 +1081,7 @@ footer {
 }
 
 .overview {
-    padding-top: 100px;
+    padding-top: 60px;
     position: relative;
     z-index: 0;
 }
@@ -1113,8 +1120,8 @@ footer {
     border-radius: 50%;
     background-color: rgba(21, 21, 21, .6);
     z-index: 8888;
-    top: 45%;
-    left: 45%;
+    top: 43%;
+    left: 48%;
     font-size: 29px;
     color: #F2DF3A
 }
@@ -1197,26 +1204,29 @@ footer {
     border-radius: 8px;
     height: 60px;
     font-size: 1em;
-    color: #5A7184
+    color: #5A7184;
+    display: block;
+    padding:18px
 }
-
+.featuresLabel i{
+    margin: 0;
+    color:black
+}
 .featuresLabel p {
     font-family: 'Rubik', sans-serif;
     display: inline-block;
     margin-right: 10px;
-
 }
 
-.iconcont {
+.featuresLabel .iconcont {
     width: 24px;
     height: 24px;
     display: inline-flex;
     background-color: #F2DF3A;
     border-radius: 50%;
-    ;
-    margin-left: 25px;
     justify-content: center;
-    color: #151515
+    color: #151515;
+    margin-left:25px
 }
 
 .showMoreBtn {
@@ -1258,8 +1268,8 @@ footer {
     z-index: 22;
 }
 
-.ourProdBox:hover .corner {
-    background-color: #151515;
+.ourProdBox:before{
+    width:80%;
 }
 
 .ourProdBox h5 {
@@ -1453,6 +1463,24 @@ footer {
 }
 
 @media (max-width: 850px) {
+    .navbar-collapse{
+        background-color: #151515;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        right: 0;
+        padding: 20px;
+    }
+     .navbar-collapse .close{
+        float: left;
+        opacity: 1;
+        color: white;
+    }
+    
+    
     body {
         font-size: 14px;
     }
@@ -1495,7 +1523,9 @@ footer {
     }
 
     .hero {
-        height: 660px;
+        height: 711px;
+        padding-top: 46px;
+    
 
     }
 
@@ -1540,9 +1570,7 @@ footer {
     .ourTeambg2{
         display: none;
     }
-    .aboutHero{
-        padding-top:150px
-    }
+
     .memberBox{
        margin-bottom: 70px;
     }
@@ -1569,6 +1597,9 @@ footer {
         top:auto;
         margin:20px auto
     }
+    .OurProductHero{
+        padding-bottom: 95px;
+    }
     .OurProductHero:before{
         clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 88%);
     }
@@ -1585,10 +1616,45 @@ footer {
         height: auto;
     }
 .contactUsPage {
-    padding-top:180px
+    padding-top:200px
 }
 header{
     height: auto;
+}
+.aboutHero h1{
+    max-width: 100%;;
+    font-size: 2em;
+}
+.showoverviewVideoBtn{
+    top: 31%;
+    left: 36%;
+}
+.Gallery .owl-dots {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    background-color:transparent;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.Gallery .owl-dots .owl-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin:10px;
+    background-color: #5A7184;
+
+}
+
+.Gallery .owl-dots .owl-dot.active {
+    background-color: #F2DF3A;
+}
+.reportFeatures{
+    padding-bottom: 80px;
+}
+.oursamplesSec{
+    padding-bottom: 50px;
 }
 }
 @media(min-width:800px ) and (max-width:1020px) {

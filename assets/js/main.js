@@ -52,6 +52,9 @@ $(window).scroll(function () {
     }
 
   });
+  $(".close").click(function(){
+    $(this).parent().removeClass("show")
+  })
 
 
 });
