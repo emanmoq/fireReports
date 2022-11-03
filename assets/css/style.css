@@ -1584,7 +1584,12 @@ footer {
     .overviewVideoContainer{
         height: auto;
     }
-
+.contactUsPage {
+    padding-top:180px
+}
+header{
+    height: auto;
+}
 }
 @media(min-width:800px ) and (max-width:1020px) {
     .navbar-expand-lg .navbar-collapse {
