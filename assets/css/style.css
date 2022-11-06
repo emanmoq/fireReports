@@ -1670,6 +1670,8 @@ header{
         flex-basis: auto;
         -ms-flex-direction: row;
         flex-direction: row;
+        background-color: transparent;
+        top: auto;
     }
 
     .navbar-toggler {
