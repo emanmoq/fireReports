@@ -1111,7 +1111,7 @@ footer {
     border-radius: 32px;
 
     background-size: 100% 100%;
-    object-fit: cover;
+    object-fit: contain;
     position: relative;
 }
 
@@ -1463,6 +1463,9 @@ footer {
 }
 .close{
     display: none;
+}
+.contactPageCont{
+    padding-top: 150px;
 }
 @media (max-width: 850px) {
     .navbar-collapse{
