@@ -43,19 +43,20 @@ $(window).scroll(function () {
 //add fix header when scroll down and remove when back up
     if (scrollTop > $('header').height()) {
       $('header').addClass('scrollNav');
-
-
     }
 
     else {
       $('header').removeClass('scrollNav');
     }
-
   });
   $(".close").click(function(){
     $(this).parent().removeClass("show")
   })
 
+  $('.navbar-collapse ul li a').on('click', function () {
+    $('html, body').animate({ scrollTop: $(this.hash).offset().top - 5 }, 1000);
+    return false;
+});
 
 });
 

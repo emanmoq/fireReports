@@ -1666,6 +1666,9 @@ header{
 .ourTeam{
     padding: 30px 0;
 }
+.contactPageCont{
+    padding-top:200px
+}
 }
 @media(min-width:800px ) and (max-width:1020px) {
     .navbar-expand-lg .navbar-collapse {
